@@ -515,20 +515,21 @@
         let selectedCard = null;
         
         // بيانات المستويات والبطاقات (سيتم استبدالها بصور حقيقية)
-        const levelsData = [];
-        for (let i = 1; i <= 23; i++) {
-            levelsData.push({
-                id: i,
-                cards: [
-                    { id: `${i}-1`, type: 'puzzle', image: `img/puzzle-${i}-1.jpg` },
-                    { id: `${i}-2`, type: 'puzzle', image: `img/puzzle-${i}-2.jpg` },
-                    { id: `${i}-3`, type: 'puzzle', image: `img/puzzle-${i}-3.jpg` },
-                    { id: `${i}-1`, type: 'solution', image: `img/solution-${i}-1.jpg` },
-                    { id: `${i}-2`, type: 'solution', image: `img/solution-${i}-2.jpg` },
-                    { id: `${i}-3`, type: 'solution', image: `img/solution-${i}-3.jpg` }
-                ]
-            });
-        }
+        // بيانات المستويات والبطاقات
+const levelsData = [];
+for (let i = 1; i <= 23; i++) {
+    levelsData.push({
+        id: i,
+        cards: [
+            { id: `${i}-1`, type: 'puzzle', image: `images/puzzles/level-${i}/puzzle-${i}-1.jpg` },
+            { id: `${i}-2`, type: 'puzzle', image: `images/puzzles/level-${i}/puzzle-${i}-2.jpg` },
+            { id: `${i}-3`, type: 'puzzle', image: `images/puzzles/level-${i}/puzzle-${i}-3.jpg` },
+            { id: `${i}-1`, type: 'solution', image: `images/solutions/level-${i}/solution-${i}-1.jpg` },
+            { id: `${i}-2`, type: 'solution', image: `images/solutions/level-${i}/solution-${i}-2.jpg` },
+            { id: `${i}-3`, type: 'solution', image: `images/solutions/level-${i}/solution-${i}-3.jpg` }
+        ]
+    });
+}
         
         // تهيئة التطبيق
         document.addEventListener('DOMContentLoaded', initApp);
