@@ -227,7 +227,7 @@ function createConfetti() {
 
 // تهيئة قاعدة البيانات IndexedDB
 function initializeDB() {
-    const request = indexedDB.open('CardGameDB', 6); // ترقية الإصدار إلى 6
+    const request = indexedDB.open('CardDB', 6); // ترقية الإصدار إلى 6
 
     request.onerror = (event) => {
         console.error('فشل في فتح قاعدة البيانات', event);
